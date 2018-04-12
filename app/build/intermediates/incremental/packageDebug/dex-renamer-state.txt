@@ -1,7 +1,0 @@
-#Wed Jan 31 12:03:19 PST 2018
-base.0=/Projects/android/Interview/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_170b9c8525f1342ac48f49eefb056459107ae16a
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/Projects/android/Interview/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_47a4d90d73d45d55399ce539034f16a9cbbee272/classes.dex
-base.1=/Projects/android/Interview/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_47a4d90d73d45d55399ce539034f16a9cbbee272
-file.0=/Projects/android/Interview/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_170b9c8525f1342ac48f49eefb056459107ae16a/classes.dex
