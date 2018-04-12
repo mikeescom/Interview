@@ -1,0 +1,4 @@
+#Wed Jan 31 12:11:45 PST 2018
+base.0=/Projects/android/Interview/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6
+renamed.0=classes.dex
+file.0=/Projects/android/Interview/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex
