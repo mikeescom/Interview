@@ -1,8 +1,13 @@
 package com.zumepizza.interview;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TableLayout;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -21,10 +26,20 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
+    private TableLayout tableLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initViews();
+    }
 
+    private void initViews() {
+        tableLayout = (TableLayout) findViewById(R.id.main_table);
+        View view;
+        LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        view = inflater.inflate(R.layout.item_layout, null);
+        tableLayout.addView(view);
     }
 }
