@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         View view;
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(R.layout.item_layout, null);
+        ImageView mainImage = view.findViewById(R.id.main_image);
         tableLayout.addView(view);
     }
 }
