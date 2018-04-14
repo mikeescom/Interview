@@ -24,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.zumepizza.interview.CartActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

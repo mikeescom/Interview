@@ -1,6 +1,7 @@
 package com.zumepizza.interview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.AnimationSet;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -41,17 +43,21 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+    private Context context;
     final int ANIMATION_DURATION = 650;
     private TableLayout tableLayout;
+
     Datum[] datumArray = null;
     private API api;
     private AlphaAnimation buttonClick;
     private AnimationSet animationSet;
+    private Button checkoutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        context = getApplicationContext();
         api = new API(this);
         initViews();
         getData();
@@ -63,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         animationSet.addAnimation(buttonClick);
         animationSet.setDuration(ANIMATION_DURATION);
         tableLayout = (TableLayout) findViewById(R.id.main_table);
+        checkoutButton = (Button) findViewById(R.id.checkout_button);
     }
     
     private void getData (){
@@ -104,7 +111,15 @@ public class MainActivity extends AppCompatActivity {
             addButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     v.startAnimation(animationSet);
-                    Toast.makeText(getApplicationContext(), "PRESSED: " + v.getTransitionName(), Toast.LENGTH_SHORT).show();
+                    checkoutButton.setText("Go to cart");
+                    Toast.makeText(getApplicationContext(), "1 item added! ", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            checkoutButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    Intent intent = new Intent(context, CartActivity.class);
+                    startActivity(intent);
                 }
             });
 

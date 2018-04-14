@@ -1,4 +1,4 @@
-#Fri Apr 13 21:03:03 PDT 2018
+#Fri Apr 13 22:34:46 PDT 2018
 base.0=/Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

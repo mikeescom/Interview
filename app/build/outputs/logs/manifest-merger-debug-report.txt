@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/7128d5eebd2bdd8c8355b748b55508f1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/4006c3815f91708911d7c65ac0da145a/AndroidManifest.xml:2:1-11:12
@@ -18,20 +18,20 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/miguelsaavedr
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c427c19bcc3642a73f43bd011da5342a/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3a92e8018959033a5362ad4a11f68776/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce3bc6d1eefe998bb5517c6b00d855e4/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:11-69
@@ -40,7 +40,7 @@ ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/m
 	android:name
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:7:5-19:19
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:7:5-20:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/7128d5eebd2bdd8c8355b748b55508f1/AndroidManifest.xml:9:5-20
@@ -89,6 +89,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:16:17-77
 	android:name
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.zumepizza.interview.CartActivity
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:19:9-59
+	android:name
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:19:19-47
 uses-sdk
 INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
