@@ -4,7 +4,7 @@
             "outputFile": "/Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/aedb7495b9b9ee7d5db10e438721f68e/res/values-land/values-land.xml",
+                    "source": "/Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

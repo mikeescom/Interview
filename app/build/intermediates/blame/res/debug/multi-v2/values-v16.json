@@ -4,13 +4,32 @@
             "outputFile": "/Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/aedb7495b9b9ee7d5db10e438721f68e/res/values-v16/values-v16.xml",
+                    "source": "/Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3a92e8018959033a5362ad4a11f68776/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
                         "endColumns": "65",
                         "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
                     }
                 }
             ]
