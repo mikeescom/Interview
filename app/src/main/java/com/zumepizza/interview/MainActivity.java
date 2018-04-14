@@ -4,13 +4,18 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.AnimationSet;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.zumepizza.interview.data.Datum;
@@ -36,9 +41,12 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+    final int ANIMATION_DURATION = 650;
     private TableLayout tableLayout;
     Datum[] datumArray = null;
     private API api;
+    private AlphaAnimation buttonClick;
+    private AnimationSet animationSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        buttonClick = new AlphaAnimation(1F, 0.5F);
+        animationSet = new AnimationSet(true);
+        animationSet.addAnimation(buttonClick);
+        animationSet.setDuration(ANIMATION_DURATION);
         tableLayout = (TableLayout) findViewById(R.id.main_table);
     }
     
@@ -63,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     populateTable();
                 }
                 catch (Exception e) {
-                    Log.d("API", "JSON conversion error: " + e.getLocalizedMessage());
+                    e.getStackTrace();
                 }
             }
         };
@@ -74,10 +86,12 @@ public class MainActivity extends AppCompatActivity {
         TableRow row = null;
         for(Datum datum: datumArray) {
             row = new TableRow(this);
+            row.setGravity(Gravity.CENTER);
             LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View layoutView = inflater.inflate(R.layout.item_layout, null);
 
             ImageView mainImage = layoutView.findViewById(R.id.main_image);
+            ImageButton addButton = layoutView.findViewById(R.id.add_button);
             TextView title = layoutView.findViewById(R.id.title);
             TextView toppings = layoutView.findViewById(R.id.toppings);
             TextView price = layoutView.findViewById(R.id.price);
@@ -85,7 +99,14 @@ public class MainActivity extends AppCompatActivity {
             Picasso.get().load(datum.getMenuAsset().getUrl()).into(mainImage);
             title.setText(datum.getName());
             toppings.setText(Utils.getToppings(datum.getToppings()));
-            price.setText(datum.getPrice());
+            price.setText(Utils.getFormsttedPrice(datum.getPrice()));
+
+            addButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    v.startAnimation(animationSet);
+                    Toast.makeText(getApplicationContext(), "PRESSED: " + v.getTransitionName(), Toast.LENGTH_SHORT).show();
+                }
+            });
 
             row.addView(layoutView);
             tableLayout.addView(row);

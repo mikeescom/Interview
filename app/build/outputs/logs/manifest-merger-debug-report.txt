@@ -74,7 +74,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/miguelsaavedralozano/.
 	android:allowBackup
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:11:9-52
 activity#com.zumepizza.interview.MainActivity
 ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:12:9-18:20
 	android:name

@@ -31,4 +31,8 @@ public class Utils {
 
         return  toppingString.substring(0, toppingString.length()-2);
     }
+
+    public static String getFormsttedPrice(String price) {
+        return  "$ ".concat(price);
+    }
 }
