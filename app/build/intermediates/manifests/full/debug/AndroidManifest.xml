@@ -11,20 +11,25 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name="com.zumepizza.interview.ZumeApplication"
         android:allowBackup="true"
         android:debuggable="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme.NoActionBar" >
-        <activity android:name="com.zumepizza.interview.MainActivity" >
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.zumepizza.interview.MainActivity"
+            android:label="Zume Pizza Menu" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.zumepizza.interview.CartActivity" />
+        <activity
+            android:name="com.zumepizza.interview.CartActivity"
+            android:label="Zume Pizza Cart" />
 
         <meta-data
             android:name="android.support.VERSION"

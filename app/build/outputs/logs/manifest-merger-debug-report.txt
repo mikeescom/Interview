@@ -1,12 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/7128d5eebd2bdd8c8355b748b55508f1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/4006c3815f91708911d7c65ac0da145a/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/3abc6777f71f1904c6ded0bc8ff476f5/AndroidManifest.xml:2:1-13:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/6cc5e93e1c8ddb8c39d271519f699899/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4feb22370b730f0b528c2c5b8f98ff49/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/fd08199f2dae64889c87a11b5bff34cc/AndroidManifest.xml:17:1-28:12
@@ -18,20 +19,20 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/miguelsaavedr
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/c427c19bcc3642a73f43bd011da5342a/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3a92e8018959033a5362ad4a11f68776/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce3bc6d1eefe998bb5517c6b00d855e4/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:3:5-38
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:2:11-69
@@ -40,13 +41,15 @@ ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/m
 	android:name
 		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:7:5-20:19
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:7:5-23:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b477da227db3ca8944534a924addd31/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/7128d5eebd2bdd8c8355b748b55508f1/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/7128d5eebd2bdd8c8355b748b55508f1/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/4006c3815f91708911d7c65ac0da145a/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/4006c3815f91708911d7c65ac0da145a/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/3abc6777f71f1904c6ded0bc8ff476f5/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/3abc6777f71f1904c6ded0bc8ff476f5/AndroidManifest.xml:11:5-20
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/6cc5e93e1c8ddb8c39d271519f699899/AndroidManifest.xml:7:5-12:19
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/6cc5e93e1c8ddb8c39d271519f699899/AndroidManifest.xml:7:5-12:19
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4feb22370b730f0b528c2c5b8f98ff49/AndroidManifest.xml:22:5-26:19
@@ -68,31 +71,37 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/miguelsaavedraloz
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce3bc6d1eefe998bb5517c6b00d855e4/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ce3bc6d1eefe998bb5517c6b00d855e4/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:10:9-41
 	android:allowBackup
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:9:9-35
 	android:theme
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:11:9-52
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:12:9-40
+	android:name
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:8:9-63
 activity#com.zumepizza.interview.MainActivity
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:13:9-20:20
+	android:label
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:14:13-44
 	android:name
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:12:19-47
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:13:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:18:27-74
 activity#com.zumepizza.interview.CartActivity
-ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:19:9-59
+ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:21:9-22:56
+	android:label
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:22:13-44
 	android:name
-		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:19:19-47
+		ADDED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml:21:19-47
 uses-sdk
 INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/miguelsaavedralozano/AndroidStudioProjects/Interview/app/src/main/AndroidManifest.xml
@@ -103,6 +112,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/migu
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/7128d5eebd2bdd8c8355b748b55508f1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.volley:volley:1.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/4006c3815f91708911d7c65ac0da145a/AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/4006c3815f91708911d7c65ac0da145a/AndroidManifest.xml:7:5-43
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/3abc6777f71f1904c6ded0bc8ff476f5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/stetho-1.5.0.aar/3abc6777f71f1904c6ded0bc8ff476f5/AndroidManifest.xml:7:5-9:41
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/6cc5e93e1c8ddb8c39d271519f699899/AndroidManifest.xml:5:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/6cc5e93e1c8ddb8c39d271519f699899/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/miguelsaavedralozano/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/4feb22370b730f0b528c2c5b8f98ff49/AndroidManifest.xml:20:5-44

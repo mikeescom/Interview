@@ -42,6 +42,7 @@
                 android:id="@+id/add_button"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:background="@drawable/ripple_effect"
                 android:src="@mipmap/add_button"/>
             <TextView
                 android:id="@+id/price"

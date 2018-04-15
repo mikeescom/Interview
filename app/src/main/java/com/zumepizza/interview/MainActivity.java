@@ -1,5 +1,6 @@
 package com.zumepizza.interview;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +14,6 @@ import android.view.animation.AnimationSet;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -21,21 +21,24 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.zumepizza.interview.data.Datum;
+import com.zumepizza.interview.db.DatabaseHandler;
+import com.zumepizza.interview.db.Item;
 
 import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
 
 /*
  Exercise instructions
 
  1) Fetch menu data using the URL given in API.java.
+ DONE
  2) Use fetched data to instantiate product model objects.
+ DONE
  2) Using product models, populate a list view using designs found in mocks/menu-mock-up.png
+ DONE but no folder was found
  3) Implement cart functionality, to allow users to add/remove items to their cart.
+ DONE
  4) Add cart activity to display items added to cart. Use designs found in mocks/cart-mock-up.png
+ DONE but no folder was found
 
  */
 
@@ -43,6 +46,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+    final DatabaseHandler db = new DatabaseHandler(this);
     private Context context;
     final int ANIMATION_DURATION = 650;
     private TableLayout tableLayout;
@@ -53,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
     private AnimationSet animationSet;
     private Button checkoutButton;
 
+    private int counter = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +67,19 @@ public class MainActivity extends AppCompatActivity {
         api = new API(this);
         initViews();
         getData();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        final TextView itemsCounter = (TextView) findViewById(R.id.items_counter);
+        itemsCounter.setText(db.getItemsCount() + " items added to cart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        db.close();
     }
 
     private void initViews() {
@@ -91,17 +110,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void populateTable() {
         TableRow row = null;
-        for(Datum datum: datumArray) {
+        for(final Datum datum: datumArray) {
             row = new TableRow(this);
             row.setGravity(Gravity.CENTER);
             LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View layoutView = inflater.inflate(R.layout.item_layout, null);
+            final View layoutView = inflater.inflate(R.layout.item_layout, null);
+
+            final TextView itemsCounter = (TextView) findViewById(R.id.items_counter);
+            itemsCounter.setText(db.getItemsCount() + " items added to cart");
 
             ImageView mainImage = layoutView.findViewById(R.id.main_image);
             ImageButton addButton = layoutView.findViewById(R.id.add_button);
-            TextView title = layoutView.findViewById(R.id.title);
+            final TextView title = layoutView.findViewById(R.id.title);
             TextView toppings = layoutView.findViewById(R.id.toppings);
-            TextView price = layoutView.findViewById(R.id.price);
+            final TextView price = layoutView.findViewById(R.id.price);
 
             Picasso.get().load(datum.getMenuAsset().getUrl()).into(mainImage);
             title.setText(datum.getName());
@@ -110,8 +132,16 @@ public class MainActivity extends AppCompatActivity {
 
             addButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
+                    counter++;
                     v.startAnimation(animationSet);
                     checkoutButton.setText("Go to cart");
+                    Item item = new Item();
+                    item.set_name(title.getText().toString());
+                    item.set_url(datum.getMenuAsset().getUrl().toString());
+                    item.set_toppings(Utils.getToppings(datum.getToppings()));
+                    item.set_price(price.getText().toString());
+                    db.addItem(item);
+                    itemsCounter.setText(counter + " items added to cart");
                     Toast.makeText(getApplicationContext(), "1 item added! ", Toast.LENGTH_SHORT).show();
                 }
             });
