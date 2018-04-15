@@ -6,8 +6,8 @@
     android:orientation="horizontal">
     <ImageView
         android:id="@+id/main_image"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_margin="5dp"
         android:layout_gravity="center_vertical"
         android:src="@mipmap/ic_launcher"/>
@@ -15,40 +15,58 @@
         android:id="@+id/right_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         android:layout_gravity="center_vertical"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:textColor="@android:color/holo_red_light"
-            android:text="TITLE"/>
-        <TextView
-            android:id="@+id/toppings"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="12dp"
-            android:textStyle="italic"
-            android:textColor="@android:color/darker_gray"
-            android:maxLines="2"
-            android:text="TOPPINGS"/>
+        android:orientation="horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
             <TextView
-                android:id="@+id/price"
+                android:id="@+id/title"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:layout_marginStart="10dp"
-                android:textSize="24dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
                 android:textStyle="bold"
-                android:textColor="@android:color/darker_gray"
-                android:text="PRICE"/>
+                android:text="TITLE"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/plus_button"/>
+                <TextView
+                    android:id="@+id/toppings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/darker_gray"
+                    android:maxLines="2"
+                    android:text="x1"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/remove_button"/>
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/delete_button"/>
+            </LinearLayout>
         </LinearLayout>
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end"
+            android:layout_marginStart="10dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:text="PRICE"/>
     </LinearLayout>
 
 </LinearLayout>
