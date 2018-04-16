@@ -6,6 +6,7 @@ public class Item {
     private String _url;
     private String _toppings;
     private String _price;
+    private String _counter;
 
     public Item(){   }
 
@@ -47,5 +48,13 @@ public class Item {
 
     public void set_price(String _price) {
         this._price = _price;
+    }
+
+    public String get_counter() {
+        return _counter;
+    }
+
+    public void set_counter(String _counter) {
+        this._counter = _counter;
     }
 }

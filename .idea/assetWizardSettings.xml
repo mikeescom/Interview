@@ -160,7 +160,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_remove_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_delete_forever_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -170,7 +170,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="remove_button" />
+                            <entry key="outputName" value="delete_button" />
                             <entry key="sourceFile" value="$USER_HOME$" />
                           </map>
                         </option>

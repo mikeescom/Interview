@@ -9,8 +9,6 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.AnimationSet;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -34,11 +32,11 @@ import org.json.JSONArray;
  2) Use fetched data to instantiate product model objects.
  DONE
  2) Using product models, populate a list view using designs found in mocks/menu-mock-up.png
- DONE but no folder was found
+ DONE
  3) Implement cart functionality, to allow users to add/remove items to their cart.
  DONE
  4) Add cart activity to display items added to cart. Use designs found in mocks/cart-mock-up.png
- DONE but no folder was found
+ DONE
 
  */
 
@@ -48,13 +46,10 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     final DatabaseHandler db = new DatabaseHandler(this);
     private Context context;
-    final int ANIMATION_DURATION = 650;
     private TableLayout tableLayout;
 
     Datum[] datumArray = null;
     private API api;
-    private AlphaAnimation buttonClick;
-    private AnimationSet animationSet;
     private Button checkoutButton;
 
     private int counter = 0;
@@ -70,23 +65,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        final TextView itemsCounter = (TextView) findViewById(R.id.items_counter);
-        itemsCounter.setText(db.getItemsCount() + " items added to cart");
-    }
-
-    @Override
     protected void onDestroy() {
         super.onDestroy();
         db.close();
     }
 
     private void initViews() {
-        buttonClick = new AlphaAnimation(1F, 0.5F);
-        animationSet = new AnimationSet(true);
-        animationSet.addAnimation(buttonClick);
-        animationSet.setDuration(ANIMATION_DURATION);
         tableLayout = (TableLayout) findViewById(R.id.main_table);
         checkoutButton = (Button) findViewById(R.id.checkout_button);
     }
@@ -116,9 +100,6 @@ public class MainActivity extends AppCompatActivity {
             LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             final View layoutView = inflater.inflate(R.layout.item_layout, null);
 
-            final TextView itemsCounter = (TextView) findViewById(R.id.items_counter);
-            itemsCounter.setText(db.getItemsCount() + " items added to cart");
-
             ImageView mainImage = layoutView.findViewById(R.id.main_image);
             ImageButton addButton = layoutView.findViewById(R.id.add_button);
             final TextView title = layoutView.findViewById(R.id.title);
@@ -132,16 +113,15 @@ public class MainActivity extends AppCompatActivity {
 
             addButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    counter++;
-                    v.startAnimation(animationSet);
                     checkoutButton.setText("Go to cart");
                     Item item = new Item();
+                    item.set_id(datum.getId());
                     item.set_name(title.getText().toString());
                     item.set_url(datum.getMenuAsset().getUrl().toString());
                     item.set_toppings(Utils.getToppings(datum.getToppings()));
                     item.set_price(price.getText().toString());
+                    item.set_counter("1");
                     db.addItem(item);
-                    itemsCounter.setText(counter + " items added to cart");
                     Toast.makeText(getApplicationContext(), "1 item added! ", Toast.LENGTH_SHORT).show();
                 }
             });

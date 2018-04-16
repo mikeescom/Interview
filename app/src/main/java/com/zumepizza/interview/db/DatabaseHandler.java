@@ -18,6 +18,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String KEY_URL = "url";
     private static final String KEY_TOPPINGS = "toppings";
     private static final String KEY_PRICE = "price";
+    private static final String KEY_COUNTER = "counter";
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -30,7 +31,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 + KEY_NAME + " TEXT,"
                 + KEY_URL + " TEXT,"
                 + KEY_TOPPINGS + " TEXT,"
-                + KEY_PRICE + " TEXT" + ")";
+                + KEY_PRICE + " TEXT,"
+                + KEY_COUNTER + " TEXT" + ")";
         db.execSQL(CREATE_CART_TABLE);
     }
 
@@ -43,10 +45,12 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     public void addItem(Item item) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, item.get_id());
         values.put(KEY_NAME, item.get_name());
         values.put(KEY_URL, item.get_url());
         values.put(KEY_TOPPINGS, item.get_toppings());
         values.put(KEY_PRICE, item.get_price());
+        values.put(KEY_COUNTER, "1");
         db.insert(TABLE_CART, null, values);
         db.close();
     }
@@ -66,6 +70,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 item.set_url(cursor.getString(2));
                 item.set_toppings(cursor.getString(3));
                 item.set_price(cursor.getString(4));
+                item.set_counter(cursor.getString(5));
                 itemList.add(item);
             } while (cursor.moveToNext());
         }
@@ -73,9 +78,39 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         return itemList;
     }
 
+    private Item getItem(int id) {
+        Item item = new Item();
+        String selectQuery = "SELECT * FROM " + TABLE_CART + " WHERE " + KEY_ID + " = " + id;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery,null);
+
+        if (cursor.moveToFirst()) {
+            do {
+                item.set_id(Integer.parseInt(cursor.getString(0)));
+                item.set_name(cursor.getString(1));
+                item.set_url(cursor.getString(2));
+                item.set_toppings(cursor.getString(3));
+                item.set_price(cursor.getString(4));
+                item.set_counter(cursor.getString(5));
+            } while (cursor.moveToNext());
+        }
+
+        return item;
+    }
+
     public int getItemsCount() {
         ArrayList<Item> itemsList = getAllItems();
         return itemsList.size();
+    }
+
+    public void updateItemCounter(Item contact, int counter) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(KEY_COUNTER, String.valueOf(counter));
+        db.update(TABLE_CART, values,KEY_ID + " = ?",
+                new String[] { String.valueOf(contact.get_id()) });
+        db.close();
     }
 
     public void deleteItem(Item contact) {
